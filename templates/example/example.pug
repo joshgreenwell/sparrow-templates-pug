@@ -1,11 +1,30 @@
 doctype html
 html
   head
+    //- Reveal.js themes and css
+    link(rel="stylesheet", href="../reveal.js/dist/reveal.js")
+    link(rel="stylesheet", href="../reveal.js/dist/reveal.css")
+    link(rel="stylesheet", href="../reveal.js/dist/theme/black.css")#theme
+    link(rel="stylesheet", href="../reveal.js/plugin/highlight/monokai.css")#highlight-theme
+    
     style
       include example.css
   body
-    p.something test
+    div.reveal
+      div.slides
+        section
+          h1.title-text Slide 1
+        section
+          section
+            h1.title-text Slide 2.1
+          section
+            h1.title-text Slide 2.2
 
-    // script(src="sparrow-cdn/reveal.js")
-    // script(src="sparrow-cdn/reveal.css")
+    //- Reveal.js scripts
+    script(src="../reveal.js/dist/reveal.js")
+    script(src="../reveal.js/plugin/highlight/highlight.js")
+    script(src="../reveal.js/plugin/markdown/markdown.js")
+
+    script
+      include example.js
   
