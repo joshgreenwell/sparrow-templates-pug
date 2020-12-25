@@ -16,14 +16,15 @@ npm install
 yarn compile:dev -- <dir>
 ```
 
-## Compiling
+## Building & Compiling
 
 ```
-yarn compile -- <dir>
+yarn build -- <dir>; yarn compile -- <dir>
 ```
 
 -or-
 
 ```
-yarn compile:all
+yarn build:all; yarn compile:all
 ```
+

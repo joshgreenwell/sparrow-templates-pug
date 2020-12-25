@@ -3,14 +3,21 @@
   "version": "1.0.0",
   "description": "Example library for creating Sparrow Marketing templates using the Pug framework",
   "scripts": {
+    "build": "babel -d js",
+    "build:all": "babel templates -d js",
+    "build:dev": "babel templates -d js --watch",
     "compile": "pug -o ./html",
     "compile:all": "pug templates -o ./html",
-    "compile:dev": "pug -w -o ./html",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:dev": "pug templates -o ./html --watch"
   },
   "author": "Josh Greenwell",
   "license": "ISC",
   "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "babel-preset-minify": "^0.5.1",
+    "jstransformer-babel": "^2.1.0",
     "pug": "^3.0.0",
     "pug-cli": "^1.0.0-alpha6"
   }
