@@ -1,0 +1,17 @@
+{
+  "name": "sparrow-templates-pug",
+  "version": "1.0.0",
+  "description": "Example library for creating Sparrow Marketing templates using the Pug framework",
+  "scripts": {
+    "compile": "pug -o ./html",
+    "compile:all": "pug templates -o ./html",
+    "compile:dev": "pug -w -o ./html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Josh Greenwell",
+  "license": "ISC",
+  "devDependencies": {
+    "pug": "^3.0.0",
+    "pug-cli": "^1.0.0-alpha6"
+  }
+}
